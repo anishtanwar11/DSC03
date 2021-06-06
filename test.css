@@ -1,0 +1,545 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/*-------------------body---------------*/
+
+.body{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative
+    ;
+}
+/*----------------all similar content styling code------------*/
+section{
+  padding: 100px 0;
+}
+h2{
+  font-weight: 1300;
+}
+.about{
+  font-family: 'Poppins', sans-serif;
+  background-color: #FEF2F2;
+}
+.admission{
+  font-family: 'Poppins', sans-serif;
+  background-color: #FCE7F3; 
+}
+.contact{
+  font-family: 'Poppins', sans-serif;
+  background-color: #FEF2F2;
+}
+.about .about-content,
+.contact .contact-content,
+.admission .admission-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* ----------------nav bar-------------- */
+.nav-bar{
+    display: flex;
+    padding: 40px 120px;
+}
+h3{
+    font-size: 30px;
+    color: white;
+}
+h6{
+    
+    color: #fff;
+    font-size: 15px;
+}    
+
+
+.nav-links{
+    flex: 1;
+
+}
+.nav-links ul{
+    margin-left: 50px;
+    display: inline;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+}
+.nav-links ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: crimson;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.btn{
+    padding: 10px 20px;
+    border: 2px solid crimson;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    transition: all .3s ease;
+    transition-property: background-color, color;
+}
+
+.btn:hover{
+    color:black;
+    background-color: crimson;
+}
+.nav-links  .btn{
+    float: right;
+}
+/* -----------------banner title------------------ */
+.banner-title{
+    margin: 80px 130px;
+    color: #fff;
+    text-align: center;
+}
+.banner-title h1{
+    font-size: 45px;
+    margin-bottom: 30px ;
+}
+.banner-title h2{
+    
+    font-size: 20px;  
+    margin-bottom: 20px; 
+}
+.banner-title h1 span{
+    color: crimson;
+}
+
+/*------------------CONTACT US-----------------*/
+
+.contact .contact-content .column{
+  width: calc(50% - 25%);
+}
+.contact .contact-content .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+  text-align: justify;
+}
+.contact .contact-content .left{
+  margin-right: 40px;
+  margin-top: 25px;
+  
+}
+
+.contact .contact-content .right{
+  margin-right: 40px;
+  margin-bottom: 5px;
+}
+.contact .contact-content .left .icons{
+  margin: 10px 0;
+  margin-top: 5px;
+}
+.contact .contact-content .row{
+  height: 65px;
+}
+.contact .contact-content .row .info{
+  margin-left: 30px;
+  width: 300px;
+}
+.contact .contact-content .row i{
+  font-size: 30px;
+  color: crimson;
+  text-align: left;
+  
+}
+
+.contact .right form .fields{
+  display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.contact .right form .textarea{
+  height: 80px;
+  width: 100%;
+}
+.contact .right form .name{
+  margin-right: 30px;
+}
+.contact .right form .email{
+  margin-left: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: 'Poppins',sans-serif;
+}
+
+.contact .right form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button{
+  height: 47px;
+  width: 170px;
+  margin-top: 25px;
+}
+.contact .right form .button button{
+  width: 100%;
+  height: 100%;
+  border: 2px solid crimson;
+  background: crimson;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .3s ease;
+  
+}
+.contact .right form .button button:hover{
+  color: crimson;
+  background: none;
+
+}
+
+
+/*------------------ONLINE ADMISSION-----------------*/
+
+.admission .admission-content .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  
+}
+
+.admission .admission-content .frame{
+  height: 100%; 
+  width: 100%;
+  padding: 80px 80px;
+  
+ 
+  
+}
+.admission .center form .files{
+  display: flex;
+}
+.admission .center form .file,
+.admission .center form .files .file{
+  height: 40px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.admission .center form .name,
+.admission .center form .phone{
+  margin-right: 10px;
+}
+.admission .center form .email,
+.admission .center form .date{
+  margin-left: 30px;
+}
+
+.admission .center form .city{
+  height: 50px;
+  width: 50%;
+}
+
+.admission .center form .name input,
+.admission .center form .email input,
+.admission .center form .phone input,
+.admission .center form .date input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: 'Poppins',sans-serif;
+}
+.admission .center form .qualification select{
+  height: 120%;
+  width: 104.5%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: 'Poppins',sans-serif;
+}
+.admission .center form .city input{
+  height: 100%;
+  width: 200%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: 'Poppins',sans-serif;
+}
+
+.admission .center form .button{
+  height: 47px;
+  width: 170px;
+  margin-top: 10px;
+}
+.admission .center form .button button{
+  width: 100%;
+  height: 100%;
+  border: 2px solid crimson;
+  background: crimson;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .3s ease;
+  
+}
+.admission .center form .button button:hover{
+  color: crimson;
+  background: none;
+
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+
+#footer .footer-info{
+  width: calc(40% - 10%);
+}
+
+#footer {
+  background: #000;
+  padding: 0 0 30px 0;
+  color: #eee;
+  font-size: 14px;
+  
+}
+
+#footer .footer-top {
+  background: #111;
+  padding: 60px 0 30px 0;
+  
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#footer .footer-top .footer-info {
+  margin-top: 0;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+.footer-contact{
+  margin-right: 30px;
+}
+#footer .footer-top .footer-info h3 {
+  font-size: 34px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 10px;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  border-left: 4px solid crimson;
+}
+
+#footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #eee;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #eee;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 40%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+i{
+  margin-top: 8px;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: crimson;
+  color: #fff;
+}
+
+#footer .footer-top h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+  
+}
+
+#footer .footer-top h4::before,
+#footer .footer-top h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  margin-bottom: 8px;
+}
+
+#footer .footer-top h4::before {
+  right: 0;
+  background: #555;
+}
+
+#footer .footer-top h4::after {
+  background: crimson;
+  width: 60px;
+}
+
+#footer .footer-top .footer-links
+{
+  margin-bottom: 35px;
+  margin-right: 80px;
+  margin-left: 80px;
+
+}
+#footer .footer-top .footer-links-web{
+  margin-bottom: 1px;
+  margin-right: 80px;
+}
+#footer .footer-top .footer-contact{
+  margin-bottom: 50px;
+  
+  margin-top: 14px;
+}
+#footer .footer-top .footer-links ul,
+#footer .footer-top .footer-links-web ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+#footer .footer-top .footer-links ul i,
+#footer .footer-top .footer-links-web ul i {
+  padding-right: 8px;
+  color: #ddd;
+}
+
+#footer .footer-top .footer-links ul li,
+#footer .footer-top .footer-links-web ul li {
+  border-bottom: 1px solid #333;
+  padding: 10px 0;
+}
+
+#footer .footer-top .footer-links ul li:first-child,
+#footer .footer-top .footer-links-web ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a,
+#footer .footer-top .footer-links-web ul a {
+  color: #eee;
+}
+
+#footer .footer-top .footer-links ul a:hover,
+#footer .footer-top .footer-links-web ul a:hover {
+  color: crimson;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#footer .credits {
+  text-align: center;
+  font-size: 13px;
+  color: #ddd;
+}
+
+/*==============ABOUT SECTION================*/
+
+.about .about-content .about{
+  width: calc(50% - 30%);
+}
+
+
+
+.about .about-content .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  
+}
+.about .about-content .right {
+  
+  margin-left: 40px;
+}
+
+.about .about-content .left{
+  margin-right: 40px;
+}
+.button{
+  height: 47px;
+  width: 170px;
+  margin-top: 10px;
+}
+.button button{
+  height: 47px;
+  width: 170px;
+  margin-top: 10px;
+  border: 2px solid crimson;
+  background: crimson;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .3s ease;
+  
+}
+.button button:hover{
+  color: crimson;
+  background: none;
+
+}
